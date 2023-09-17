@@ -1,7 +1,9 @@
 # BCG_CaseStudy
 
+Spark application code as part of BCG Case Study analysis. The file **python_analysis.py** contains the raw analysis done with pandas library.
+
 ### Runbook
-Clone the repo and follow these steps:
+Clone the repository and follow these steps:
 
 1. Go to the Project Directory: `> cd BCG_CaseStudy`
 2. On terminal, run the following command
