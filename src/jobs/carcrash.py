@@ -75,7 +75,7 @@ class CarCrash:
 
         return df.first().DRVR_LIC_STATE_ID
     
-    def get_top_vehicles_contributing_to_injuries_and_death_with_rank(self, startRank, endRank):
+    def get_top_vehicles_contributing_to_injuries_and_death_within_rank(self, startRank, endRank):
         """
         Find Top 5th to 15th VEH_MAKE_IDs that contribute to a largest number of injuries including death
         
@@ -99,7 +99,7 @@ class CarCrash:
         
         return [vehicle[0] for vehicle in df_VEH_MAKE_IDs_with_Death_Injury.select("VEH_MAKE_ID").collect()]
 
-    def get_ethnic_group_with_rank_foreach_crash_veh_body_style(self, rank):
+    def get_ethnic_group_with_rank_foreach_veh_body_style(self, rank):
         """
         Show top ethnic user group of each unique body style, for all the body styles involved in crashes
 
@@ -126,7 +126,7 @@ class CarCrash:
         
         df.show(truncate=False)
 
-    def get_top_n_zipcodes_crashes_due_to_alcohol(self, n_count):
+    def get_top_n_zipcodes_with_crashes_due_to_alcohol(self, n_count):
         """
         Return the Top 5 Zip Codes with the highest number crashes with alcohols as the contributing factor to a crash (Use Driver Zip Code)
 

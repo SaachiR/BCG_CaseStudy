@@ -27,14 +27,14 @@ if __name__ == '__main__':
     print("Analysis Result 3: ", carCrashAnalysis.get_state_with_highest_accident_for_gender(gender="FEMALE"))
 
     # 4. Which are the Top 5th to 15th VEH_MAKE_IDs that contribute to a largest number of injuries including death
-    print("Analysis Result 4: ", carCrashAnalysis.get_top_vehicles_contributing_to_injuries_and_death_with_rank(startRank=5,endRank=15))
+    print("Analysis Result 4: ", carCrashAnalysis.get_top_vehicles_contributing_to_injuries_and_death_within_rank(startRank=5,endRank=15))
 
     # 5. For all the body styles involved in crashes, mention the top ethnic user group of each unique body style
     print("Analysis Result 5: ")
-    print(carCrashAnalysis.get_ethnic_group_with_rank_foreach_crash_veh_body_style(rank=1))
+    print(carCrashAnalysis.get_ethnic_group_with_rank_foreach_veh_body_style(rank=1))
 
     # 6. Analysis 6: Among the crashed cars, what are the Top 5 Zip Codes with highest number crashes with alcohols as the contributing factor to a crash (Use Driver Zip Code)
-    print("Analysis Result 6: ", carCrashAnalysis.get_top_n_zipcodes_crashes_due_to_alcohol(n_count=5))
+    print("Analysis Result 6: ", carCrashAnalysis.get_top_n_zipcodes_with_crashes_due_to_alcohol(n_count=5))
 
     # 7. Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance
     print("Analysis Result 7: ", carCrashAnalysis.get_count_of_crashes_with_insurance_and_no_damage())
