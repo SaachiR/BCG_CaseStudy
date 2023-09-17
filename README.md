@@ -1,6 +1,6 @@
 # BCG_CaseStudy
 
-Spark application code as part of BCG Case Study analysis. The file **python_analysis.py** contains the raw analysis done with pandas library.
+Spark application developed as part of BCG Case Study analysis. The file **python_analysis.py** contains the raw analysis done with pandas library.
 
 ### Runbook
 Clone the repository and follow these steps:
